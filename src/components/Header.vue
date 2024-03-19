@@ -2,9 +2,12 @@
 import {$reactiveState} from "@/store/store";
 </script>
 <template>
-    <header aria-label="header" class="pt-20" role="banner">
-        <div class="container flex  justify-end items-center">
-            <label class="inline-flex gap-x-5 items-center cursor-pointer">
+    <header aria-label="header" class="pt-m-padd" role="banner">
+        <div class="container flex justify-end items-center">
+            <label
+                aria-label="label wrapper"
+                class="inline-flex gap-x-5 items-center cursor-pointer"
+            >
                 <input
                     type="checkbox"
                     value=""
@@ -45,7 +48,7 @@ import {$reactiveState} from "@/store/store";
                 <div
                     class="relative w-11 h-6 bg-clr-purple rounded-full dark:bg-clr-purple peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-clr-purple"
                 ></div>
-                <span class="moon icon">
+                <span aria-label="moon icon">
                     <svg
                         v-if="$reactiveState.dark"
                         xmlns="http://www.w3.org/2000/svg"

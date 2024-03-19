@@ -1,6 +1,7 @@
 <script setup>
 import {$reactiveState} from "./store/store";
 import Header from "./components/Header.vue";
+
 </script>
 <template>
     <div class="background h-full w-full absolute z-[-1]" aria-hidden="true">
@@ -22,7 +23,7 @@ import Header from "./components/Header.vue";
                 alt="background image"
             />
         </picture>
-        <picture class="block" v-else>
+        <picture class="block h-full overflow-hidden" v-else>
             <source
                 media="(min-width: 1199px)"
                 srcset="/pattern-background-desktop-light.svg"
@@ -39,4 +40,7 @@ import Header from "./components/Header.vue";
         </picture>
     </div>
     <Header />
+    <main role="main" class="mt-16" aria-label="main content">
+        <RouterView />
+    </main>
 </template>

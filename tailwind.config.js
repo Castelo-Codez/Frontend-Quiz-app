@@ -13,6 +13,7 @@ export default {
                 "clr-light-grey": "#F4F6FA",
                 "clr-green": "#26D782",
                 "clr-red": "#EE5454",
+                "clr-p": "#ABC1E1",
             },
             screens: {
                 sm: "576px",
@@ -31,6 +32,12 @@ export default {
                     xl: "1140px",
                     "2xl": "1320px",
                 },
+            },
+            padding: {
+                "m-padd": "7.5vw",
+            },
+            boxShadow: {
+                mainBoxShadow: "rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;",
             },
         },
     },

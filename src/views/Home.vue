@@ -26,8 +26,16 @@
                             aria-label="link container"
                         >
                             <RouterLink
-                                class="p-4 rounded-2xl shadow-sm shadow-clr-light-bluish/25 bg-clr-light-grey dark:bg-clr-navy flex items-center gap-x-5 text-clr-dark-navy dark:text-clr-light-grey font-[500] text-[1.5rem]"
-                                :to="{name: 'quiz', params: {id: 'html'}}"
+                                class="p-5 rounded-2xl shadow-sm shadow-clr-light-bluish/25 bg-clr-light-grey dark:bg-clr-navy flex items-center gap-x-5 text-clr-dark-navy dark:text-clr-light-grey font-[500] text-[1.5rem]"
+                                :to="{
+                                    name: 'quiz',
+                                    params: {
+                                        id: 'html',
+                                    },
+                                    query: {
+                                        bgLogo: 'bg-orange-100',
+                                    },
+                                }"
                             >
                                 <span
                                     aria-label="icon"
@@ -53,8 +61,14 @@
                             aria-label="link container"
                         >
                             <RouterLink
-                                class="p-4 rounded-2xl shadow-sm shadow-clr-light-bluish/25 bg-clr-light-grey dark:bg-clr-navy flex items-center gap-x-5 text-clr-dark-navy dark:text-clr-light-grey font-[500] text-[1.5rem]"
-                                :to="{name: 'quiz', params: {id: 'css'}}"
+                                class="p-5 rounded-2xl shadow-sm shadow-clr-light-bluish/25 bg-clr-light-grey dark:bg-clr-navy flex items-center gap-x-5 text-clr-dark-navy dark:text-clr-light-grey font-[500] text-[1.5rem]"
+                                :to="{
+                                    name: 'quiz',
+                                    params: {id: 'css'},
+                                    query: {
+                                        bgLogo: 'bg-green-100',
+                                    },
+                                }"
                             >
                                 <span
                                     aria-label="icon"
@@ -79,8 +93,16 @@
                             aria-label="link container"
                         >
                             <RouterLink
-                                class="p-4 rounded-2xl shadow-sm shadow-clr-light-bluish/25 bg-clr-light-grey dark:bg-clr-navy flex items-center gap-x-5 text-clr-dark-navy dark:text-clr-light-grey font-[500] text-[1.5rem]"
-                                :to="{name: 'quiz', params: {id: 'javascript'}}"
+                                class="p-5 rounded-2xl shadow-sm shadow-clr-light-bluish/25 bg-clr-light-grey dark:bg-clr-navy flex items-center gap-x-5 text-clr-dark-navy dark:text-clr-light-grey font-[500] text-[1.5rem]"
+                                :to="{
+                                    name: 'quiz',
+                                    params: {
+                                        id: 'javascript',
+                                    },
+                                    query: {
+                                        bgLogo: 'bg-sky-50',
+                                    },
+                                }"
                             >
                                 <span
                                     aria-label="icon"
@@ -105,10 +127,15 @@
                             aria-label="link container"
                         >
                             <RouterLink
-                                class="p-4 rounded-2xl shadow-sm shadow-clr-light-bluish/25 bg-clr-light-grey dark:bg-clr-navy flex items-center gap-x-5 text-clr-dark-navy dark:text-clr-light-grey font-[500] text-[1.5rem]"
+                                class="p-5 rounded-2xl shadow-sm shadow-clr-light-bluish/25 bg-clr-light-grey dark:bg-clr-navy flex items-center gap-x-5 text-clr-dark-navy dark:text-clr-light-grey font-[500] text-[1.5rem]"
                                 :to="{
                                     name: 'quiz',
-                                    params: {id: 'Accessibility'},
+                                    params: {
+                                        id: 'Accessibility',
+                                    },
+                                    query: {
+                                        bgLogo: 'bg-purple-100',
+                                    },
                                 }"
                             >
                                 <span

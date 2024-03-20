@@ -3,10 +3,10 @@ import {$reactiveState} from "@/store/store";
 </script>
 <template>
     <header aria-label="header" class="pt-m-padd" role="banner">
-        <div class="container flex justify-end items-center">
+        <div class="container relative z-50 flex justify-end items-center">
             <label
                 aria-label="label wrapper"
-                class="inline-flex gap-x-5 items-center cursor-pointer"
+                class="inline-flex gap-x-5 h-[45px] items-center cursor-pointer"
             >
                 <input
                     type="checkbox"

@@ -151,7 +151,7 @@ function $moveNextQuestion() {
                     {{ $currentQuiz.questions.length }}
                 </span>
                 <h1
-                    aria-label="main heading"
+                    aria-label="question"
                     class="dark:text-clr-light-grey text-[7vw] sm:text-[6vw] md:tex-[5vw] lg:text-[3vw] leading-[1.2] font-[400] text-clr-dark-navy"
                 >
                     {{ $currentQuestion.question }}
@@ -187,7 +187,7 @@ function $moveNextQuestion() {
                         />
                         <label
                             :for="'answer' + index"
-                            class="flex gap-x-5 font-[700] group items-center text-[1.3rem] w-full p-5 dark:text-clr-light-grey text-clr-dark-navy bg-white border-[2px] rounded-2xl cursor-pointer hover:bg-gray-100 dark:bg-clr-navy"
+                            class="flex gap-x-5 font-[700] group items-center text-[5vw] sm:text-[1.3rem] w-full p-5 dark:text-clr-light-grey text-clr-dark-navy bg-white border-[2px] rounded-2xl cursor-pointer hover:bg-gray-100 dark:bg-clr-navy"
                             :class="[
                                 $rightAnswer === answer
                                     ? 'border-clr-green dark:border-clr-green peer-checked:border-clr-green dark:peer-checked:border-clr-green'
@@ -222,7 +222,7 @@ function $moveNextQuestion() {
                         <button
                             v-else
                             type="submit"
-                            class="w-full bg-clr-purple text-clr-light-grey p-5 rounded-2xl text-[1.3rem]  font-[600]"
+                            class="w-full bg-clr-purple text-clr-light-grey p-5 rounded-2xl text-[1.3rem] font-[600]"
                             @click="$submitAnswer"
                         >
                             Submit
